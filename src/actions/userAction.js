@@ -1,4 +1,4 @@
-import * as type from '../constan/con';
+import * as type from '../constant/const';
 
 // export function getUsers(users) {
 //     return {

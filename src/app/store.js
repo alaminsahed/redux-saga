@@ -1,4 +1,4 @@
-import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 import practicalReducer from '../reducers/practicalReducer';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import users from '../reducers/userReducer';
@@ -14,7 +14,8 @@ const reducer = combineReducers({
 const sagaMiddleware = createSagaMiddleware();
 
 
-const store = createStore(reducer, {}, composeWithDevTools(applyMiddleware(sagaMiddleware)));
+const store = createStore(reducer, composeWithDevTools(applyMiddleware(sagaMiddleware)));
+
 console.log("store", store.getState());
 
 sagaMiddleware.run(rootSaga);

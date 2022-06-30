@@ -1,4 +1,4 @@
-import { PRACTICAL_CLASS_ADD, PRACTICAL_CLASS_CANCEL } from '../constan/con'
+import { PRACTICAL_CLASS_ADD, PRACTICAL_CLASS_CANCEL } from '../constant/const'
 
 
 export const getIncrease = () => {
