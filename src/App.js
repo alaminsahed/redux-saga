@@ -1,10 +1,10 @@
-import Counter from './features/counter';
+//import Counter from './features/counter';
 import NameList from './features/NameList';
 
 function App() {
   return (
     <div>
-      <Counter />
+      {/* <Counter /> */}
       <NameList />
     </div>
   );
